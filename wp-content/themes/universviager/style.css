@@ -1,0 +1,1450 @@
+/*
+Theme Name: Univers Viager
+Description: Univers Viager 
+Version: 1.0
+Author: Univers Viager
+*/
+/* line 8, sass/style.scss */
+* {
+  padding: 0;
+  margin: 0; }
+
+/* line 9, sass/style.scss */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* line 10, sass/style.scss */
+ul, li {
+  list-style: none; }
+
+/* line 11, sass/style.scss */
+a {
+  text-decoration: none; }
+
+/* line 12, sass/style.scss */
+main {
+  width: 100%; }
+
+/* line 13, sass/style.scss */
+.screenshot {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; }
+
+@font-face {
+  font-family: 'karla';
+  src: url("assets/font/Karla-VariableFont_wght.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Lato';
+  src: url("assets/font/Lato-Regular.woff2") format("woff2"); }
+/* line 1, sass/composents/_header.scss */
+header {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column; }
+  /* line 3, sass/composents/_header.scss */
+  header > div.header-banner {
+    width: 100%;
+    height: 60px;
+    background-color: #79AB25;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end; }
+    /* line 5, sass/composents/_header.scss */
+    header > div.header-banner > div {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      padding: 0 80px; }
+      /* line 7, sass/composents/_header.scss */
+      header > div.header-banner > div > div:first-child > a {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center; }
+        /* line 9, sass/composents/_header.scss */
+        header > div.header-banner > div > div:first-child > a > img {
+          width: 20px; }
+        /* line 10, sass/composents/_header.scss */
+        header > div.header-banner > div > div:first-child > a > p {
+          color: #fff;
+          font-family: 'karla';
+          font-weight: 700;
+          font-size: 16px;
+          margin-left: 8px; }
+      /* line 13, sass/composents/_header.scss */
+      header > div.header-banner > div > div:nth-child(2) {
+        height: 20px;
+        width: 2px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 0 30px; }
+      /* line 14, sass/composents/_header.scss */
+      header > div.header-banner > div > div:last-child {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        border-radius: 5px;
+        border: 2px solid #fff; }
+        /* line 16, sass/composents/_header.scss */
+        header > div.header-banner > div > div:last-child > div {
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px; }
+          /* line 18, sass/composents/_header.scss */
+          header > div.header-banner > div > div:last-child > div:first-child {
+            background-color: #fff;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px; }
+            /* line 20, sass/composents/_header.scss */
+            header > div.header-banner > div > div:last-child > div:first-child > div {
+              color: #79AB25;
+              font-family: 'karla';
+              font-weight: 700;
+              font-size: 16px; }
+          /* line 23, sass/composents/_header.scss */
+          header > div.header-banner > div > div:last-child > div:last-child > div {
+            color: #fff;
+            font-family: 'karla';
+            font-weight: 700;
+            font-size: 12px; }
+  /* line 30, sass/composents/_header.scss */
+  header > div.header {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px; }
+    /* line 32, sass/composents/_header.scss */
+    header > div.header > div.site-logo {
+      width: 150px; }
+      /* line 34, sass/composents/_header.scss */
+      header > div.header > div.site-logo > a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        /* line 36, sass/composents/_header.scss */
+        header > div.header > div.site-logo > a > img {
+          max-width: 100%; }
+    /* line 39, sass/composents/_header.scss */
+    header > div.header > nav > ul {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center; }
+      /* line 41, sass/composents/_header.scss */
+      header > div.header > nav > ul > li {
+        list-style: none;
+        cursor: pointer; }
+        /* line 43, sass/composents/_header.scss */
+        header > div.header > nav > ul > li:not(:last-child) {
+          margin-right: 30px; }
+        /* line 46, sass/composents/_header.scss */
+        header > div.header > nav > ul > li:last-child {
+          transition: background-color 0.6s;
+          border: 2px solid #79AB25;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px 14px;
+          border-radius: 5px; }
+          /* line 48, sass/composents/_header.scss */
+          header > div.header > nav > ul > li:last-child:hover {
+            border: 2px solid #fff;
+            background-color: #79AB25;
+            transition: background-color 0.6s; }
+            /* line 50, sass/composents/_header.scss */
+            header > div.header > nav > ul > li:last-child:hover > a {
+              color: #fff;
+              transition: color 0.6s; }
+          /* line 52, sass/composents/_header.scss */
+          header > div.header > nav > ul > li:last-child > a {
+            color: #79AB25;
+            transition: color 0.6s; }
+        /* line 54, sass/composents/_header.scss */
+        header > div.header > nav > ul > li.current-menu-parent > a {
+          pointer-events: none; }
+        /* line 57, sass/composents/_header.scss */
+        header > div.header > nav > ul > li > a {
+          color: #000;
+          font-family: 'Karla';
+          font-weight: 700;
+          font-size: 16px; }
+          /* line 59, sass/composents/_header.scss */
+          header > div.header > nav > ul > li > a > img {
+            margin-left: 10px; }
+        /* line 61, sass/composents/_header.scss */
+        header > div.header > nav > ul > li ul {
+          display: none;
+          padding: 10px;
+          flex-direction: column;
+          align-items: flex-start;
+          position: absolute;
+          top: 130px;
+          background-color: #79AB25;
+          border-radius: 5px;
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.17); }
+          /* line 63, sass/composents/_header.scss */
+          header > div.header > nav > ul > li ul.open {
+            display: flex; }
+          /* line 64, sass/composents/_header.scss */
+          header > div.header > nav > ul > li ul.openOpa {
+            opacity: 1;
+            transition: opacity 1s; }
+          /* line 65, sass/composents/_header.scss */
+          header > div.header > nav > ul > li ul > li {
+            list-style: none; }
+            /* line 67, sass/composents/_header.scss */
+            header > div.header > nav > ul > li ul > li:not(:last-child) {
+              margin-bottom: 8px; }
+            /* line 68, sass/composents/_header.scss */
+            header > div.header > nav > ul > li ul > li > a {
+              color: #fff;
+              font-family: 'Karla';
+              font-weight: 400;
+              font-size: 16px;
+              border-bottom: 1px solid transparent; }
+              /* line 70, sass/composents/_header.scss */
+              header > div.header > nav > ul > li ul > li > a:hover {
+                border-bottom: 1px solid #fff;
+                transition: border-bottom 0.4s; }
+
+/* line 1, sass/composents/_footer.scss */
+footer {
+  width: 100%;
+  background-color: #007CB7; }
+  /* line 3, sass/composents/_footer.scss */
+  footer > div:first-child {
+    max-width: 100%;
+    padding: 40px 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between; }
+    /* line 5, sass/composents/_footer.scss */
+    footer > div:first-child > div:first-child {
+      width: 150px; }
+      /* line 7, sass/composents/_footer.scss */
+      footer > div:first-child > div:first-child > a {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        /* line 9, sass/composents/_footer.scss */
+        footer > div:first-child > div:first-child > a > img {
+          width: 100%; }
+    /* line 12, sass/composents/_footer.scss */
+    footer > div:first-child > nav {
+      width: 70%;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
+      justify-content: space-between; }
+      /* line 14, sass/composents/_footer.scss */
+      footer > div:first-child > nav > ul {
+        width: 80%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: space-between; }
+        /* line 18, sass/composents/_footer.scss */
+        footer > div:first-child > nav > ul > li > a {
+          font-family: 'Karla';
+          font-weight: 700;
+          font-size: 18px;
+          color: #fff;
+          pointer-events: none; }
+        /* line 19, sass/composents/_footer.scss */
+        footer > div:first-child > nav > ul > li > ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 10px; }
+          /* line 21, sass/composents/_footer.scss */
+          footer > div:first-child > nav > ul > li > ul > li {
+            margin-bottom: 10px; }
+            /* line 23, sass/composents/_footer.scss */
+            footer > div:first-child > nav > ul > li > ul > li > a {
+              font-family: 'Karla';
+              font-weight: 400;
+              font-size: 14px;
+              color: #fff;
+              transition: opacity 0.5s; }
+              /* line 25, sass/composents/_footer.scss */
+              footer > div:first-child > nav > ul > li > ul > li > a:hover {
+                opacity: 0.7;
+                transition: opacity 0.5s; }
+      /* line 31, sass/composents/_footer.scss */
+      footer > div:first-child > nav > div:last-child {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 80px; }
+        /* line 33, sass/composents/_footer.scss */
+        footer > div:first-child > nav > div:last-child > span {
+          font-family: 'Karla';
+          font-weight: 700;
+          font-size: 16px;
+          color: #fff;
+          margin-bottom: 10px; }
+        /* line 34, sass/composents/_footer.scss */
+        footer > div:first-child > nav > div:last-child > a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          border: 2px solid #fff;
+          border-radius: 5px;
+          margin-bottom: 10px; }
+          /* line 36, sass/composents/_footer.scss */
+          footer > div:first-child > nav > div:last-child > a:hover {
+            background-color: #fff;
+            transition: background-color 0.5s; }
+            /* line 38, sass/composents/_footer.scss */
+            footer > div:first-child > nav > div:last-child > a:hover > p {
+              color: #007CB7;
+              transition: color 0.5s; }
+          /* line 40, sass/composents/_footer.scss */
+          footer > div:first-child > nav > div:last-child > a > img {
+            margin-right: 6px; }
+          /* line 41, sass/composents/_footer.scss */
+          footer > div:first-child > nav > div:last-child > a > p {
+            font-family: 'Karla';
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff; }
+  /* line 48, sass/composents/_footer.scss */
+  footer > div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; }
+    /* line 50, sass/composents/_footer.scss */
+    footer > div:last-child > div:first-child {
+      display: flex;
+      flex-flow: row nowrap; }
+      /* line 52, sass/composents/_footer.scss */
+      footer > div:last-child > div:first-child > span {
+        font-family: 'Karla';
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 10px; }
+      /* line 53, sass/composents/_footer.scss */
+      footer > div:last-child > div:first-child > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px; }
+        /* line 55, sass/composents/_footer.scss */
+        footer > div:last-child > div:first-child > a:nth-child(2) {
+          margin: 0 20px; }
+        /* line 56, sass/composents/_footer.scss */
+        footer > div:last-child > div:first-child > a > img {
+          width: 100%; }
+    /* line 60, sass/composents/_footer.scss */
+    footer > div:last-child > div:last-child {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      margin: 20px auto 40px; }
+      /* line 62, sass/composents/_footer.scss */
+      footer > div:last-child > div:last-child > a {
+        display: flex;
+        font-family: 'Karla';
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff; }
+      /* line 66, sass/composents/_footer.scss */
+      footer > div:last-child > div:last-child > span {
+        font-family: 'Karla';
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        margin: 0 5px; }
+      /* line 67, sass/composents/_footer.scss */
+      footer > div:last-child > div:last-child > p {
+        font-family: 'Karla';
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff; }
+
+/* line 1, sass/composents/_home.scss */
+main.site-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  /* line 5, sass/composents/_home.scss */
+  main.site-content section.home-section1 {
+    width: 100%;
+    height: 855px;
+    min-height: 500px;
+    overflow: hidden; }
+    /* line 7, sass/composents/_home.scss */
+    main.site-content section.home-section1 > div {
+      max-width: 100%;
+      padding: 80px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start; }
+      /* line 9, sass/composents/_home.scss */
+      main.site-content section.home-section1 > div > div.bloc-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        /* line 11, sass/composents/_home.scss */
+        main.site-content section.home-section1 > div > div.bloc-form div#message {
+          display: none; }
+        /* line 12, sass/composents/_home.scss */
+        main.site-content section.home-section1 > div > div.bloc-form > h1 {
+          color: #fff !important;
+          font-family: 'karla';
+          margin-bottom: 30px;
+          font-weight: 800;
+          font-size: 42px;
+          text-transform: uppercase;
+          line-height: 60px; }
+          /* line 14, sass/composents/_home.scss */
+          main.site-content section.home-section1 > div > div.bloc-form > h1 > span:first-child {
+            font-family: 'karla';
+            color: #fff !important;
+            font-size: 28px;
+            line-height: 32px; }
+        /* line 16, sass/composents/_home.scss */
+        main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) {
+          max-width: 460px;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          /* line 18, sass/composents/_home.scss */
+          main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:first-child {
+            width: 100%;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #79AB25;
+            padding: 12px 20px; }
+            /* line 20, sass/composents/_home.scss */
+            main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:first-child > p {
+              color: #fff;
+              font-family: 'karla';
+              font-weight: 700;
+              font-size: 16px; }
+          /* line 22, sass/composents/_home.scss */
+          main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            /* line 24, sass/composents/_home.scss */
+            main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start; }
+              /* line 26, sass/composents/_home.scss */
+              main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) {
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: flex-start; }
+                /* line 28, sass/composents/_home.scss */
+                main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) > div {
+                  width: 47%;
+                  margin-bottom: 20px;
+                  position: initial;
+                  padding: initial; }
+                  /* line 30, sass/composents/_home.scss */
+                  main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) > div:nth-child(even) {
+                    margin-left: 20px; }
+                  /* line 31, sass/composents/_home.scss */
+                  main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) > div div.acf-label {
+                    display: none; }
+                  /* line 32, sass/composents/_home.scss */
+                  main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) > div div.acf-input {
+                    width: 100%;
+                    overflow: hidden; }
+                /* line 34, sass/composents/_home.scss */
+                main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) select, main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) input {
+                  background-color: #fff;
+                  border-radius: 5px;
+                  padding: 10px 15px;
+                  border: 1px solid transparent; }
+                /* line 37, sass/composents/_home.scss */
+                main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) select {
+                  width: 100%;
+                  appearance: none;
+                  cursor: pointer;
+                  background-image: url("http://univers-viager.test/wp-content/uploads/2023/10/ArrowSelect.svg");
+                  background-repeat: no-repeat;
+                  background-position: right 0.7rem top 50%;
+                  background-size: 0.95rem auto; }
+                  /* line 43, sass/composents/_home.scss */
+                  main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) select::placeholder {
+                    color: #000;
+                    font-family: 'Lato';
+                    font-weight: 500;
+                    font-size: 16px; }
+                /* line 46, sass/composents/_home.scss */
+                main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) input {
+                  width: 220px; }
+                  /* line 48, sass/composents/_home.scss */
+                  main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) input::placeholder {
+                    color: rgba(0, 0, 0, 0.5);
+                    font-family: 'Lato';
+                    font-weight: 500;
+                    font-size: 16px; }
+                  /* line 49, sass/composents/_home.scss */
+                  main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form > div:nth-child(2) input::value {
+                    color: rgba(0, 0, 0, 0.5);
+                    font-family: 'Lato';
+                    font-weight: 500;
+                    font-size: 16px; }
+              /* line 52, sass/composents/_home.scss */
+              main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form div.acf-form-submit {
+                cursor: pointer;
+                border: 2px solid #79AB25;
+                background-color: #79AB25;
+                border-radius: 5px;
+                padding: 10px 14px;
+                color: #fff; }
+                /* line 54, sass/composents/_home.scss */
+                main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form div.acf-form-submit:hover {
+                  background-color: transparent;
+                  color: #007CB7;
+                  transition: background-color 0.5s; }
+                  /* line 56, sass/composents/_home.scss */
+                  main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form div.acf-form-submit:hover > input {
+                    color: #79AB25; }
+                /* line 58, sass/composents/_home.scss */
+                main.site-content section.home-section1 > div > div.bloc-form > div:nth-child(2) > div:nth-child(2) > form div.acf-form-submit > input {
+                  cursor: pointer;
+                  border: 1px solid transparent;
+                  outline: none;
+                  transition: color 0.5s;
+                  background-color: transparent;
+                  font-family: 'karla';
+                  font-size: 16px;
+                  font-weight: 700;
+                  color: #fff; }
+        /* line 65, sass/composents/_home.scss */
+        main.site-content section.home-section1 > div > div.bloc-form > div:last-child {
+          margin-top: 30px;
+          width: 100%;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: flex-start; }
+          /* line 67, sass/composents/_home.scss */
+          main.site-content section.home-section1 > div > div.bloc-form > div:last-child > div {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+            max-width: 200px;
+            height: 30px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.6); }
+            /* line 69, sass/composents/_home.scss */
+            main.site-content section.home-section1 > div > div.bloc-form > div:last-child > div:first-child {
+              margin-right: 30px;
+              width: 182px; }
+            /* line 70, sass/composents/_home.scss */
+            main.site-content section.home-section1 > div > div.bloc-form > div:last-child > div:last-child {
+              width: 200px; }
+            /* line 71, sass/composents/_home.scss */
+            main.site-content section.home-section1 > div > div.bloc-form > div:last-child > div > p {
+              font-family: 'karla';
+              color: #fff;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 16px;
+              margin: 0 0 0 10px; }
+              /* line 73, sass/composents/_home.scss */
+              main.site-content section.home-section1 > div > div.bloc-form > div:last-child > div > p > strong {
+                font-weight: 800; }
+              /* line 74, sass/composents/_home.scss */
+              main.site-content section.home-section1 > div > div.bloc-form > div:last-child > div > p img {
+                width: 40px; }
+  /* line 84, sass/composents/_home.scss */
+  main.site-content section.home-section2 {
+    width: 100%; }
+    /* line 86, sass/composents/_home.scss */
+    main.site-content section.home-section2 > div {
+      max-width: 100%;
+      padding: 50px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      /* line 88, sass/composents/_home.scss */
+      main.site-content section.home-section2 > div > p {
+        font-family: 'karla';
+        color: #000;
+        font-size: 32px;
+        font-weight: 800; }
+      /* line 91, sass/composents/_home.scss */
+      main.site-content section.home-section2 > div > div {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between; }
+        /* line 93, sass/composents/_home.scss */
+        main.site-content section.home-section2 > div > div > div {
+          width: 100%;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 30px; }
+          /* line 95, sass/composents/_home.scss */
+          main.site-content section.home-section2 > div > div > div > div:not(:last-child) {
+            margin-right: 10px;
+            max-width: 333px;
+            max-height: 338px;
+            background-color: rgba(121, 171, 37, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            /* line 97, sass/composents/_home.scss */
+            main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center; }
+              /* line 99, sass/composents/_home.scss */
+              main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:first-child {
+                width: 100%;
+                overflow: hidden; }
+                /* line 101, sass/composents/_home.scss */
+                main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:first-child > img {
+                  width: 100%;
+                  object-fit: cover;
+                  object-position: center; }
+              /* line 103, sass/composents/_home.scss */
+              main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:nth-child(2) {
+                width: 100%;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin-top: 15px; }
+                /* line 105, sass/composents/_home.scss */
+                main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:nth-child(2) > div {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start; }
+                  /* line 107, sass/composents/_home.scss */
+                  main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:nth-child(2) > div > p {
+                    font-family: 'Lato';
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 700; }
+                  /* line 110, sass/composents/_home.scss */
+                  main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:nth-child(2) > div > div {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    margin-top: 10px; }
+                    /* line 112, sass/composents/_home.scss */
+                    main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:nth-child(2) > div > div > img {
+                      margin-right: 5px; }
+                    /* line 113, sass/composents/_home.scss */
+                    main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:nth-child(2) > div > div > div {
+                      display: flex;
+                      flex-flow: row nowrap;
+                      align-items: center; }
+                      /* line 115, sass/composents/_home.scss */
+                      main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:nth-child(2) > div > div > div > span {
+                        font-family: 'Lato';
+                        color: #79AB25;
+                        font-size: 16px; }
+                        /* line 117, sass/composents/_home.scss */
+                        main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:nth-child(2) > div > div > div > span:first-child {
+                          font-weight: 500;
+                          margin-right: 5px; }
+                        /* line 118, sass/composents/_home.scss */
+                        main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:nth-child(2) > div > div > div > span:first-child {
+                          font-weight: 700; }
+                /* line 124, sass/composents/_home.scss */
+                main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:nth-child(2) > a {
+                  border: 2px solid #79AB25;
+                  border-radius: 5px;
+                  padding: 10px 14px;
+                  color: #79AB25;
+                  font-family: 'karla';
+                  font-size: 16px;
+                  font-weight: 700;
+                  transition: color 0.5s; }
+                  /* line 126, sass/composents/_home.scss */
+                  main.site-content section.home-section2 > div > div > div > div:not(:last-child) > div > div:nth-child(2) > a:hover {
+                    background-color: #79AB25;
+                    color: #fff;
+                    transition: background-color 0.5s; }
+          /* line 131, sass/composents/_home.scss */
+          main.site-content section.home-section2 > div > div > div > div:last-child {
+            max-width: 250px;
+            height: 298px;
+            width: 100%;
+            display: flex;
+            border-radius: 5px;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s;
+            background-color: #79AB25; }
+            /* line 133, sass/composents/_home.scss */
+            main.site-content section.home-section2 > div > div > div > div:last-child:hover {
+              opacity: 0.7;
+              transition: opacity 0.5s; }
+            /* line 134, sass/composents/_home.scss */
+            main.site-content section.home-section2 > div > div > div > div:last-child > a {
+              display: flex;
+              height: 238px;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              padding: 30px;
+              width: 100%; }
+              /* line 136, sass/composents/_home.scss */
+              main.site-content section.home-section2 > div > div > div > div:last-child > a > p {
+                color: #fff;
+                font-family: 'karla';
+                font-size: 26px;
+                font-weight: 800; }
+              /* line 137, sass/composents/_home.scss */
+              main.site-content section.home-section2 > div > div > div > div:last-child > a > img {
+                width: 32px;
+                margin-top: 10px; }
+  /* line 148, sass/composents/_home.scss */
+  main.site-content section.home-section3 {
+    width: 100%; }
+    /* line 150, sass/composents/_home.scss */
+    main.site-content section.home-section3 > div {
+      max-width: 100%;
+      padding: 80px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      background-color: rgba(0, 124, 183, 0.1); }
+      /* line 152, sass/composents/_home.scss */
+      main.site-content section.home-section3 > div > div:first-child {
+        width: 48%;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        /* line 154, sass/composents/_home.scss */
+        main.site-content section.home-section3 > div > div:first-child > h2 {
+          color: #000;
+          font-family: 'karla';
+          font-size: 32px;
+          font-weight: 800;
+          margin-bottom: 30px; }
+        /* line 155, sass/composents/_home.scss */
+        main.site-content section.home-section3 > div > div:first-child > span {
+          color: #000;
+          font-family: 'karla';
+          font-size: 22px;
+          font-weight: 700;
+          margin-bottom: 10px; }
+        /* line 156, sass/composents/_home.scss */
+        main.site-content section.home-section3 > div > div:first-child > p {
+          color: #000;
+          font-family: 'Lato';
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          transition: opacity 0.5s; }
+          /* line 158, sass/composents/_home.scss */
+          main.site-content section.home-section3 > div > div:first-child > p > a:hover {
+            opacity: 0.7;
+            transition: opacity 0.5s; }
+        /* line 160, sass/composents/_home.scss */
+        main.site-content section.home-section3 > div > div:first-child > a {
+          border: 2px solid #007CB7;
+          border-radius: 5px;
+          padding: 10px 14px;
+          color: #007CB7;
+          margin-top: 30px;
+          font-family: 'karla';
+          font-size: 16px;
+          font-weight: 700;
+          transition: color 0.5s; }
+          /* line 162, sass/composents/_home.scss */
+          main.site-content section.home-section3 > div > div:first-child > a:hover {
+            background-color: #007CB7;
+            color: #fff;
+            transition: background-color 0.5s; }
+      /* line 165, sass/composents/_home.scss */
+      main.site-content section.home-section3 > div > div:last-child {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        /* line 167, sass/composents/_home.scss */
+        main.site-content section.home-section3 > div > div:last-child > div:first-child {
+          max-height: 500px;
+          overflow: hidden;
+          width: 100%; }
+          /* line 169, sass/composents/_home.scss */
+          main.site-content section.home-section3 > div > div:last-child > div:first-child > img {
+            width: 100%;
+            height: 100%; }
+        /* line 171, sass/composents/_home.scss */
+        main.site-content section.home-section3 > div > div:last-child > div:last-child {
+          width: 100%;
+          margin-top: 32px;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: flex-start;
+          justify-content: space-between;
+          margin-top: 20px; }
+          /* line 173, sass/composents/_home.scss */
+          main.site-content section.home-section3 > div > div:last-child > div:last-child > img:first-child {
+            width: 65%;
+            margin-right: 20px; }
+          /* line 174, sass/composents/_home.scss */
+          main.site-content section.home-section3 > div > div:last-child > div:last-child > img:last-child {
+            width: 35%; }
+  /* line 182, sass/composents/_home.scss */
+  main.site-content section.home-section4 {
+    width: 100%; }
+    /* line 184, sass/composents/_home.scss */
+    main.site-content section.home-section4 > div {
+      max-width: 100%;
+      padding: 80px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between; }
+      /* line 186, sass/composents/_home.scss */
+      main.site-content section.home-section4 > div > div:first-child {
+        width: 50%;
+        max-width: 520px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        /* line 188, sass/composents/_home.scss */
+        main.site-content section.home-section4 > div > div:first-child > img {
+          width: 100%; }
+      /* line 190, sass/composents/_home.scss */
+      main.site-content section.home-section4 > div > div:last-child {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        /* line 192, sass/composents/_home.scss */
+        main.site-content section.home-section4 > div > div:last-child > h2 {
+          color: #000;
+          font-family: 'karla';
+          font-size: 32px;
+          font-weight: 800;
+          margin-bottom: 30px; }
+        /* line 193, sass/composents/_home.scss */
+        main.site-content section.home-section4 > div > div:last-child > div:nth-child(2) {
+          width: 200px;
+          margin-bottom: 30px;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          border-radius: 5px;
+          background-color: rgba(0, 124, 183, 0.1); }
+          /* line 195, sass/composents/_home.scss */
+          main.site-content section.home-section4 > div > div:last-child > div:nth-child(2) > img {
+            margin-right: 4px; }
+          /* line 196, sass/composents/_home.scss */
+          main.site-content section.home-section4 > div > div:last-child > div:nth-child(2) > p {
+            color: #007CB7;
+            font-family: 'karla';
+            font-size: 16px;
+            font-weight: 700; }
+            /* line 198, sass/composents/_home.scss */
+            main.site-content section.home-section4 > div > div:last-child > div:nth-child(2) > p > strong {
+              font-weight: 800; }
+        /* line 201, sass/composents/_home.scss */
+        main.site-content section.home-section4 > div > div:last-child > div:nth-child(3) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start; }
+          /* line 203, sass/composents/_home.scss */
+          main.site-content section.home-section4 > div > div:last-child > div:nth-child(3) > h4 {
+            margin-bottom: 10px; }
+            /* line 205, sass/composents/_home.scss */
+            main.site-content section.home-section4 > div > div:last-child > div:nth-child(3) > h4 > span {
+              color: #007CB7;
+              font-family: 'karla';
+              font-size: 22px;
+              font-weight: 700; }
+          /* line 209, sass/composents/_home.scss */
+          main.site-content section.home-section4 > div > div:last-child > div:nth-child(3) > p {
+            color: #000;
+            font-family: 'Lato';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px; }
+        /* line 213, sass/composents/_home.scss */
+        main.site-content section.home-section4 > div > div:last-child > a {
+          border: 2px solid #007CB7;
+          border-radius: 5px;
+          padding: 10px 14px;
+          color: #007CB7;
+          margin-top: 30px;
+          font-family: 'karla';
+          font-size: 16px;
+          font-weight: 700;
+          transition: color 0.5s; }
+          /* line 215, sass/composents/_home.scss */
+          main.site-content section.home-section4 > div > div:last-child > a:hover {
+            background-color: #007CB7;
+            color: #fff;
+            transition: background-color 0.5s; }
+  /* line 223, sass/composents/_home.scss */
+  main.site-content section.home-section5 {
+    width: 100%; }
+    /* line 225, sass/composents/_home.scss */
+    main.site-content section.home-section5 > div {
+      max-width: 100%;
+      padding: 80px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between; }
+      /* line 227, sass/composents/_home.scss */
+      main.site-content section.home-section5 > div > div:first-child {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        /* line 229, sass/composents/_home.scss */
+        main.site-content section.home-section5 > div > div:first-child > h2 {
+          color: #000;
+          font-family: 'karla';
+          font-size: 32px;
+          font-weight: 800;
+          margin-bottom: 30px; }
+        /* line 230, sass/composents/_home.scss */
+        main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) {
+          width: 100%;
+          margin-bottom: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start; }
+          /* line 232, sass/composents/_home.scss */
+          main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:first-child {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; }
+            /* line 234, sass/composents/_home.scss */
+            main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:first-child > h4 {
+              margin-bottom: 10px; }
+              /* line 236, sass/composents/_home.scss */
+              main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:first-child > h4 > span {
+                color: #79AB25;
+                font-family: 'karla';
+                font-size: 22px;
+                font-weight: 700; }
+            /* line 240, sass/composents/_home.scss */
+            main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:first-child > p {
+              color: #000;
+              font-family: 'Lato';
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px; }
+              /* line 242, sass/composents/_home.scss */
+              main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:first-child > p > span {
+                font-weight: 800; }
+          /* line 245, sass/composents/_home.scss */
+          main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:nth-child(2) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; }
+            /* line 247, sass/composents/_home.scss */
+            main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:nth-child(2) > div {
+              display: flex;
+              flex-flow: row nowrap;
+              align-items: flex-start; }
+              /* line 249, sass/composents/_home.scss */
+              main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:nth-child(2) > div:first-child {
+                margin: 30px 0 20px; }
+              /* line 250, sass/composents/_home.scss */
+              main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:nth-child(2) > div > img {
+                width: 44px;
+                margin-right: 20px; }
+              /* line 251, sass/composents/_home.scss */
+              main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:nth-child(2) > div > div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start; }
+                /* line 253, sass/composents/_home.scss */
+                main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:nth-child(2) > div > div > p:first-child {
+                  font-family: 'karla';
+                  font-size: 22px;
+                  font-weight: 700;
+                  margin-bottom: 10px; }
+                /* line 256, sass/composents/_home.scss */
+                main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > div:nth-child(2) > div > div > p:not(:first-child) {
+                  color: #000;
+                  font-family: 'Lato';
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 20px; }
+          /* line 262, sass/composents/_home.scss */
+          main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > a {
+            border: 2px solid #79AB25;
+            border-radius: 5px;
+            padding: 10px 14px;
+            color: #79AB25;
+            margin-top: 30px;
+            font-family: 'karla';
+            font-size: 16px;
+            font-weight: 700;
+            transition: color 0.5s; }
+            /* line 264, sass/composents/_home.scss */
+            main.site-content section.home-section5 > div > div:first-child > div:nth-child(2) > a:hover {
+              background-color: #79AB25;
+              color: #fff;
+              transition: background-color 0.5s; }
+      /* line 269, sass/composents/_home.scss */
+      main.site-content section.home-section5 > div > div:last-child {
+        width: 50%;
+        max-width: 520px;
+        margin-left: 10px; }
+        /* line 271, sass/composents/_home.scss */
+        main.site-content section.home-section5 > div > div:last-child > img {
+          width: 100%; }
+  /* line 278, sass/composents/_home.scss */
+  main.site-content section.home-section6 {
+    width: 100%; }
+    /* line 280, sass/composents/_home.scss */
+    main.site-content section.home-section6 > div {
+      max-width: 100%;
+      padding: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #F2F7E9; }
+      /* line 282, sass/composents/_home.scss */
+      main.site-content section.home-section6 > div > h2 {
+        color: #000;
+        font-family: 'karla';
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px; }
+      /* line 283, sass/composents/_home.scss */
+      main.site-content section.home-section6 > div > div.slide-container {
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        /* line 285, sass/composents/_home.scss */
+        main.site-content section.home-section6 > div > div.slide-container div.custom-slider {
+          display: none; }
+          /* line 287, sass/composents/_home.scss */
+          main.site-content section.home-section6 > div > div.slide-container div.custom-slider > div {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between; }
+            /* line 289, sass/composents/_home.scss */
+            main.site-content section.home-section6 > div > div.slide-container div.custom-slider > div > div {
+              border: 2px solid #79AB25;
+              border-radius: 5px;
+              padding: 20px;
+              display: flex;
+              flex-direction: column;
+              align-items: center; }
+              /* line 291, sass/composents/_home.scss */
+              main.site-content section.home-section6 > div > div.slide-container div.custom-slider > div > div:nth-child(2) {
+                margin: 0 30px; }
+              /* line 294, sass/composents/_home.scss */
+              main.site-content section.home-section6 > div > div.slide-container div.custom-slider > div > div > p {
+                color: #000;
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px; }
+              /* line 295, sass/composents/_home.scss */
+              main.site-content section.home-section6 > div > div.slide-container div.custom-slider > div > div > div:nth-child(2) {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0; }
+                /* line 297, sass/composents/_home.scss */
+                main.site-content section.home-section6 > div > div.slide-container div.custom-slider > div > div > div:nth-child(2) > div {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  margin-left: 10px; }
+                  /* line 299, sass/composents/_home.scss */
+                  main.site-content section.home-section6 > div > div.slide-container div.custom-slider > div > div > div:nth-child(2) > div > span:first-child {
+                    color: #79AB25;
+                    font-family: 'karla';
+                    font-size: 20px;
+                    font-weight: 800; }
+                  /* line 302, sass/composents/_home.scss */
+                  main.site-content section.home-section6 > div > div.slide-container div.custom-slider > div > div > div:nth-child(2) > div > span:nth-child(2) {
+                    color: #000;
+                    font-family: 'Lato';
+                    font-size: 12px;
+                    font-weight: 400; }
+              /* line 307, sass/composents/_home.scss */
+              main.site-content section.home-section6 > div > div.slide-container div.custom-slider > div > div > div:last-child {
+                display: flex;
+                flex-direction: column;
+                align-items: center; }
+                /* line 309, sass/composents/_home.scss */
+                main.site-content section.home-section6 > div > div.slide-container div.custom-slider > div > div > div:last-child > img {
+                  margin-bottom: 10px; }
+                /* line 310, sass/composents/_home.scss */
+                main.site-content section.home-section6 > div > div.slide-container div.custom-slider > div > div > div:last-child > div {
+                  width: 40px;
+                  height: 2px;
+                  background-color: #79AB25; }
+        /* line 315, sass/composents/_home.scss */
+        main.site-content section.home-section6 > div > div.slide-container .on {
+          display: block; }
+        /* line 316, sass/composents/_home.scss */
+        main.site-content section.home-section6 > div > div.slide-container .fade, main.site-content section.home-section6 > div > div.slide-container .fade1, main.site-content section.home-section6 > div > div.slide-container .fade2, main.site-content section.home-section6 > div > div.slide-container .fade3 {
+          animation-name: fade;
+          animation-duration: 2s; }
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fade1 {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 2; } }
+@keyframes fade2 {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1.5; } }
+@keyframes fade3 {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 2; } }
+      /* line 337, sass/composents/_home.scss */
+      main.site-content section.home-section6 > div div.slide-dot {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px; }
+        /* line 339, sass/composents/_home.scss */
+        main.site-content section.home-section6 > div div.slide-dot span.dot {
+          width: 10px;
+          height: 10px;
+          border: 1px solid #79AB25;
+          border-radius: 50%;
+          margin: 0 5px;
+          cursor: pointer; }
+          /* line 341, sass/composents/_home.scss */
+          main.site-content section.home-section6 > div div.slide-dot span.dot.active, main.site-content section.home-section6 > div div.slide-dot span.dot:hover {
+            background-color: #79AB25; }
+  /* line 350, sass/composents/_home.scss */
+  main.site-content section.home-section7 {
+    width: 100%; }
+    /* line 352, sass/composents/_home.scss */
+    main.site-content section.home-section7 > div {
+      max-width: 100%;
+      padding: 80px 80px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: rgba(0, 124, 183, 0.1); }
+      /* line 354, sass/composents/_home.scss */
+      main.site-content section.home-section7 > div > h2 {
+        color: #000;
+        font-family: 'karla';
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px; }
+      /* line 355, sass/composents/_home.scss */
+      main.site-content section.home-section7 > div > div {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px; }
+        /* line 357, sass/composents/_home.scss */
+        main.site-content section.home-section7 > div > div.bloc2 {
+          display: none; }
+        /* line 358, sass/composents/_home.scss */
+        main.site-content section.home-section7 > div > div > div {
+          height: 100%; }
+          /* line 360, sass/composents/_home.scss */
+          main.site-content section.home-section7 > div > div > div:first-child {
+            margin-right: 32px;
+            width: 50%; }
+            /* line 363, sass/composents/_home.scss */
+            main.site-content section.home-section7 > div > div > div:first-child > div > div:first-child {
+              height: 420px; }
+              /* line 365, sass/composents/_home.scss */
+              main.site-content section.home-section7 > div > div > div:first-child > div > div:first-child > a {
+                background-color: #007CB7; }
+              /* line 366, sass/composents/_home.scss */
+              main.site-content section.home-section7 > div > div > div:first-child > div > div:first-child > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center; }
+            /* line 370, sass/composents/_home.scss */
+            main.site-content section.home-section7 > div > div > div:first-child > div > span:nth-child(2) {
+              color: #007CB7;
+              font-family: 'karla';
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 24px;
+              margin-top: 15px; }
+            /* line 371, sass/composents/_home.scss */
+            main.site-content section.home-section7 > div > div > div:first-child > div > p {
+              color: #000;
+              font-family: 'Lato';
+              font-size: 16px;
+              font-weight: 400;
+              margin: 10px 0 20px; }
+            /* line 372, sass/composents/_home.scss */
+            main.site-content section.home-section7 > div > div > div:first-child > div > span:nth-child(4) {
+              color: #000;
+              font-family: 'Lato';
+              font-size: 12px;
+              font-weight: 400;
+              margin-bottom: 20px; }
+            /* line 373, sass/composents/_home.scss */
+            main.site-content section.home-section7 > div > div > div:first-child > div > a {
+              border: 2px solid #007CB7;
+              border-radius: 5px;
+              padding: 10px 14px;
+              color: #007CB7;
+              font-family: 'karla';
+              font-size: 16px;
+              font-weight: 700;
+              transition: color 0.5s; }
+              /* line 375, sass/composents/_home.scss */
+              main.site-content section.home-section7 > div > div > div:first-child > div > a:hover {
+                background-color: #007CB7;
+                color: #fff;
+                transition: background-color 0.5s; }
+          /* line 379, sass/composents/_home.scss */
+          main.site-content section.home-section7 > div > div > div:not(:first-child) {
+            width: 48%; }
+            /* line 381, sass/composents/_home.scss */
+            main.site-content section.home-section7 > div > div > div:not(:first-child) > div {
+              width: 100%; }
+              /* line 384, sass/composents/_home.scss */
+              main.site-content section.home-section7 > div > div > div:not(:first-child) > div > div:first-child {
+                margin-bottom: 30px; }
+                /* line 386, sass/composents/_home.scss */
+                main.site-content section.home-section7 > div > div > div:not(:first-child) > div > div:first-child > div:first-child > a {
+                  background-color: #79AB25; }
+              /* line 388, sass/composents/_home.scss */
+              main.site-content section.home-section7 > div > div > div:not(:first-child) > div > div:last-child > div:first-child > a {
+                background-color: #007CB7; }
+              /* line 389, sass/composents/_home.scss */
+              main.site-content section.home-section7 > div > div > div:not(:first-child) > div > div > div:first-child {
+                height: 196px; }
+                /* line 392, sass/composents/_home.scss */
+                main.site-content section.home-section7 > div > div > div:not(:first-child) > div > div > div:first-child > div:first-child > a {
+                  background-color: #79AB25; }
+              /* line 395, sass/composents/_home.scss */
+              main.site-content section.home-section7 > div > div > div:not(:first-child) > div > div > a {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start; }
+                /* line 397, sass/composents/_home.scss */
+                main.site-content section.home-section7 > div > div > div:not(:first-child) > div > div > a > span:first-child {
+                  color: #007CB7;
+                  font-family: 'karla';
+                  font-size: 20px;
+                  font-weight: 700;
+                  line-height: 24px;
+                  margin-top: 15px; }
+                /* line 398, sass/composents/_home.scss */
+                main.site-content section.home-section7 > div > div > div:not(:first-child) > div > div > a > span:nth-child(2) {
+                  color: #000;
+                  font-family: 'Lato';
+                  font-size: 12px;
+                  font-weight: 400;
+                  margin-top: 20px; }
+          /* line 403, sass/composents/_home.scss */
+          main.site-content section.home-section7 > div > div > div div.article {
+            background-color: #fff;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; }
+            /* line 405, sass/composents/_home.scss */
+            main.site-content section.home-section7 > div > div > div div.article > div:first-child {
+              width: 100%;
+              overflow: hidden;
+              position: relative; }
+              /* line 407, sass/composents/_home.scss */
+              main.site-content section.home-section7 > div > div > div div.article > div:first-child > a {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+                border-radius: 5px;
+                color: #fff;
+                font-family: 'karla';
+                font-size: 14px;
+                font-weight: 700; }
+              /* line 410, sass/composents/_home.scss */
+              main.site-content section.home-section7 > div > div > div div.article > div:first-child > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center; }
+      /* line 418, sass/composents/_home.scss */
+      main.site-content section.home-section7 > div > button {
+        cursor: pointer;
+        border: 2px solid #007CB7;
+        background-color: #007CB7;
+        border-radius: 5px;
+        padding: 10px 14px;
+        color: #fff;
+        font-family: 'karla';
+        font-size: 16px;
+        font-weight: 700;
+        transition: color 0.5s; }
+        /* line 420, sass/composents/_home.scss */
+        main.site-content section.home-section7 > div > button:hover {
+          background-color: transparent;
+          color: #007CB7;
+          transition: background-color 0.5s; }
+  /* line 426, sass/composents/_home.scss */
+  main.site-content section.home-section8 {
+    width: 100%; }
+    /* line 428, sass/composents/_home.scss */
+    main.site-content section.home-section8 > div {
+      max-width: 100%;
+      padding: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      /* line 430, sass/composents/_home.scss */
+      main.site-content section.home-section8 > div > h2 {
+        color: #000;
+        font-family: 'karla';
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px; }
+      /* line 431, sass/composents/_home.scss */
+      main.site-content section.home-section8 > div > div {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        /* line 433, sass/composents/_home.scss */
+        main.site-content section.home-section8 > div > div > div {
+          width: 96%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          border: 2px solid #007CB7;
+          border-radius: 5px;
+          padding: 10px 20px; }
+          /* line 435, sass/composents/_home.scss */
+          main.site-content section.home-section8 > div > div > div:not(:last-child) {
+            margin-bottom: 20px; }
+          /* line 439, sass/composents/_home.scss */
+          main.site-content section.home-section8 > div > div > div.open div.accordion-header > div > img:first-child {
+            display: none; }
+          /* line 440, sass/composents/_home.scss */
+          main.site-content section.home-section8 > div > div > div.open div.accordion-header > div > img:last-child {
+            display: block; }
+          /* line 443, sass/composents/_home.scss */
+          main.site-content section.home-section8 > div > div > div.open div.accordion-content {
+            display: flex; }
+          /* line 448, sass/composents/_home.scss */
+          main.site-content section.home-section8 > div > div > div.close div.accordion-header > div > img:first-child {
+            display: block; }
+          /* line 449, sass/composents/_home.scss */
+          main.site-content section.home-section8 > div > div > div.close div.accordion-header > div > img:last-child {
+            display: none; }
+          /* line 452, sass/composents/_home.scss */
+          main.site-content section.home-section8 > div > div > div.close div.accordion-content {
+            display: none; }
+          /* line 455, sass/composents/_home.scss */
+          main.site-content section.home-section8 > div > div > div > div:first-child {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between; }
+            /* line 457, sass/composents/_home.scss */
+            main.site-content section.home-section8 > div > div > div > div:first-child:hover {
+              cursor: pointer; }
+            /* line 458, sass/composents/_home.scss */
+            main.site-content section.home-section8 > div > div > div > div:first-child > span {
+              color: #000;
+              font-family: 'karla';
+              font-size: 22px;
+              font-weight: 700; }
+            /* line 459, sass/composents/_home.scss */
+            main.site-content section.home-section8 > div > div > div > div:first-child > div {
+              width: 15px;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+              /* line 461, sass/composents/_home.scss */
+              main.site-content section.home-section8 > div > div > div > div:first-child > div > img {
+                width: 100%; }
+          /* line 466, sass/composents/_home.scss */
+          main.site-content section.home-section8 > div > div > div > div:last-child {
+            width: 100%;
+            flex-direction: column;
+            margin-top: 10px; }
+            /* line 468, sass/composents/_home.scss */
+            main.site-content section.home-section8 > div > div > div > div:last-child > div {
+              width: 100%; }
+              /* line 470, sass/composents/_home.scss */
+              main.site-content section.home-section8 > div > div > div > div:last-child > div p {
+                color: #000;
+                font-family: 'Lato';
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400; }
+                /* line 472, sass/composents/_home.scss */
+                main.site-content section.home-section8 > div > div > div > div:last-child > div p:not(:last-child) {
+                  margin-bottom: 20px; }

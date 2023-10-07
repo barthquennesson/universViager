@@ -1,0 +1,483 @@
+main.site-content {
+    width:100%; display:flex; flex-direction:column; align-items:center;
+
+    // SECTION 1 - FORMULAIRE
+    section.home-section1 {
+        width:100%; height:855px; min-height:500px; overflow:hidden;
+        > div {
+            max-width:100%; padding:80px; background-size:cover; background-position:center; background-repeat:no-repeat; display:flex; align-items:flex-start; justify-content:flex-start;
+            > div.bloc-form {
+                display:flex; flex-direction:column; align-items:flex-start;
+                div#message { display:none;}
+                > h1 {
+                    color:$white!important; font-family: 'karla'; margin-bottom:30px; font-weight:800; font-size:42px; text-transform:uppercase; line-height:60px;
+                    > span:first-child { font-family: 'karla'; color:$white!important; font-size:28px; line-height:32px; }
+                }
+                > div:nth-child(2) {
+                    max-width:460px; display:flex; flex-direction:column; align-items:center;
+                    > div:first-child {
+                        width:100%; border-top-right-radius:5px; border-top-left-radius:5px; display:flex; align-items:center; justify-content:flex-start; background-color:$green; padding:12px 20px;
+                        > p { color:$white; font-family: 'karla'; font-weight:700; font-size:16px; }
+                    }
+                    > div:nth-child(2) {
+                        width:100%; background-color:rgba(255, 255, 255, 0.8); padding:20px; display:flex; align-items:center; justify-content:center;
+                        > form {
+                            width:100%; display:flex; flex-direction:column; align-items:flex-start;
+                            > div:nth-child(2) {
+                                width:100%; display:flex; flex-flow:row wrap; align-items:flex-start;
+                                > div {
+                                    width:47%; margin-bottom:20px; position:initial; padding:initial; 
+                                    &:nth-child(even) {margin-left:20px;}
+                                    div.acf-label { display:none; }
+                                    div.acf-input { width:100%;  overflow:hidden;}
+                                }
+                                select , input {
+                                    background-color:$white; border-radius:5px; padding:10px 15px; border:1px solid transparent;
+                                }
+                                select {
+                                    width:100%; appearance: none; cursor: pointer;
+                                    background-image: url('http://univers-viager.test/wp-content/uploads/2023/10/ArrowSelect.svg');
+                                    background-repeat: no-repeat;
+                                    background-position: right 0.7rem top 50%;
+                                    background-size: 0.95rem auto;
+                                    &::placeholder { color:$black; font-family: 'Lato'; font-weight:500; font-size:16px; }
+                                    
+                                }
+                                input {
+                                    width:220px;
+                                    &::placeholder { color:rgba(0, 0, 0, 0.5); font-family: 'Lato'; font-weight:500; font-size:16px; }
+                                    &::value { color:rgba(0, 0, 0, 0.5); font-family: 'Lato'; font-weight:500; font-size:16px; }
+                                }
+                            }
+                            div.acf-form-submit {
+                                cursor:pointer; border:2px solid $green; background-color:$green; border-radius:5px; padding:10px 14px; color:$white;
+                                &:hover {
+                                    background-color:transparent; color:$blue; transition:background-color 0.5s;
+                                    > input { color:$green; }
+                                } 
+                                > input {
+                                    cursor:pointer; border:1px solid transparent; outline:none; transition:color 0.5s; background-color:transparent; font-family: 'karla'; font-size:16px; font-weight:700; color:$white;
+                                }
+                            }
+                        }
+                    }
+                }
+                > div:last-child {
+                    margin-top:30px; width:100%; display:flex; flex-flow:row nowrap; align-items:center; justify-content:flex-start;
+                    > div {
+                        display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between; border-radius:5px; max-width:200px; height:30px; padding:10px; background-color:rgba(255, 255, 255, 0.6);
+                        &:first-child { margin-right:30px; width:182px; }
+                        &:last-child { width:200px; }
+                        > p {
+                            font-family: 'karla'; color:$white; font-size:16px; font-weight:700; line-height:16px; margin:0 0 0 10px;
+                            > strong { font-weight:800; }
+                            img { width:40px; }
+                        }
+                    }
+                }
+            }
+        }
+            
+    }
+
+    // SECTION 2 - ANNONCES
+    section.home-section2 {
+        width:100%;
+        > div {
+            max-width:100%; padding:50px 80px; display:flex; flex-direction:column; align-items:flex-start;
+            > p {
+                font-family: 'karla'; color:$black; font-size:32px; font-weight:800;
+            }
+            > div {
+                width:100%; display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between;
+                > div {
+                    width:100%; display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between; margin-top:30px;
+                    > div:not(:last-child) {
+                        margin-right:10px; max-width:333px; max-height:338px; background-color:rgba(121, 171, 37, 0.1); padding:15px; border-radius:5px; display:flex;align-items:center;justify-content:center;
+                        > div {
+                            width:100%; display:flex; flex-direction:column; align-items:center;
+                            > div:first-child {
+                                width:100%; overflow:hidden;
+                                > img { width:100%; object-fit: cover; object-position:center;}
+                            }
+                            > div:nth-child(2) {
+                                width:100%; display:flex; flex-flow:row nowrap; align-items:flex-start; justify-content:space-between; margin-top:15px;
+                                > div {
+                                    display:flex; flex-direction:column; align-items:flex-start;
+                                    > p {
+                                        font-family: 'Lato'; color:$black; font-size:16px; font-weight:700;
+                                    }
+                                    > div {
+                                        display:flex; flex-flow:row nowrap; align-items:center; margin-top:10px;
+                                        > img { margin-right:5px; }
+                                        > div {
+                                            display:flex; flex-flow:row nowrap; align-items:center;
+                                            > span {
+                                                font-family: 'Lato'; color:$green; font-size:16px; 
+                                                &:first-child { font-weight:500; margin-right:5px; }
+                                                &:first-child { font-weight:700; }
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                                > a {
+                                    border:2px solid $green; border-radius:5px; padding:10px 14px; color:$green; font-family: 'karla'; font-size:16px; font-weight:700; transition:color 0.5s;
+                                    &:hover { background-color:$green; color:$white; transition:background-color 0.5s; } 
+                                }
+                            }
+                        }
+                    }
+                    > div:last-child {
+                        max-width:250px; height:298px; width:100%; display:flex; border-radius:5px; flex: 1; align-items:center; justify-content:center; transition:opacity 0.5s; background-color:$green; 
+                        &:hover { opacity:0.7; transition:opacity 0.5s; }
+                        > a {
+                            display:flex; height:238px; flex-direction:column; align-items:flex-start; justify-content: center; padding:30px; width:100%; 
+                            > p {  color:$white; font-family: 'karla'; font-size:26px; font-weight:800; }
+                            > img { width:32px; margin-top:10px; }
+                        } 
+                    }
+                }
+                
+            }
+        }
+    }
+
+
+    // SECTION 3 - Univers viager
+    section.home-section3 {
+        width:100%;
+        > div {
+            max-width:100%; padding:80px; display:flex; flex-flow:row nowrap; align-items:flex-start; justify-content:space-between; background-color:rgba(0, 124, 183, 0.1);
+           > div:first-child {
+            width:48%; margin-right:10px; display:flex; flex-direction:column; align-items:flex-start;
+                > h2 { color:$black; font-family: 'karla'; font-size:32px; font-weight:800; margin-bottom:30px; }
+                > span { color:$black; font-family: 'karla'; font-size:22px; font-weight:700; margin-bottom:10px; }
+                > p {
+                    color:$black; font-family: 'Lato'; font-size:16px; font-weight:400; line-height:24px; transition:opacity 0.5s;
+                    > a:hover { opacity:0.7; transition:opacity 0.5s; }
+                }
+                > a {
+                    border:2px solid $blue; border-radius:5px; padding:10px 14px; color:$blue; margin-top:30px; font-family: 'karla'; font-size:16px; font-weight:700; transition:color 0.5s;
+                    &:hover { background-color:$blue; color:$white; transition:background-color 0.5s; } 
+                }
+           }
+           > div:last-child {
+                width:40%; display:flex; flex-direction:column; align-items:center;
+                > div:first-child {
+                    max-height:500px; overflow:hidden; width:100%;
+                    > img { width:100%; height:100%; }
+                }
+                > div:last-child {
+                    width:100%; margin-top:32px; display:flex; flex-flow:row nowrap; align-items:flex-start; justify-content:space-between; margin-top:20px;
+                    > img:first-child { width:65%; margin-right:20px; }
+                    > img:last-child { width:35%; }
+                }
+           }
+        }
+    }
+
+
+    // SECTION 4 - Nos agences
+    section.home-section4 {
+        width:100%;
+        > div {
+            max-width:100%; padding:80px; display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between;
+           > div:first-child {
+                width:50%; max-width:520px; margin-right:10px; display:flex; flex-direction:column; align-items:flex-start;
+                > img { width:100%; }
+           }
+           > div:last-child {
+                width:50%; display:flex; flex-direction:column; align-items:flex-start;
+                > h2 { color:$black; font-family: 'karla'; font-size:32px; font-weight:800; margin-bottom:30px; }
+                > div:nth-child(2) {
+                    width:200px; margin-bottom:30px; display:flex; flex-flow:row nowrap; align-items:center; justify-content:center; padding:10px; border-radius:5px; background-color:rgba(0, 124, 183, 0.1);
+                    > img { margin-right:4px; }
+                    > p {
+                        color:$blue; font-family: 'karla'; font-size:16px; font-weight:700;
+                        > strong { font-weight:800; }
+                    }
+                }
+                > div:nth-child(3) {
+                    display:flex; flex-direction:column; align-items:flex-start;
+                    > h4 {
+                        margin-bottom:10px;
+                        > span {
+                            color:$blue; font-family: 'karla'; font-size:22px; font-weight:700;
+                        }
+                    }
+                    > p {
+                        color:$black; font-family: 'Lato'; font-size:16px; font-weight:400; line-height:24px;
+                    }
+                }
+                > a {
+                    border:2px solid $blue; border-radius:5px; padding:10px 14px; color:$blue; margin-top:30px; font-family: 'karla'; font-size:16px; font-weight:700; transition:color 0.5s;
+                    &:hover { background-color:$blue; color:$white; transition:background-color 0.5s; } 
+                }
+           }
+        }
+    }
+
+
+    // SECTION 5 - Le viager
+    section.home-section5 {
+        width:100%;
+        > div {
+            max-width:100%; padding:80px; display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between;
+           > div:first-child {
+                width:50%; display:flex; flex-direction:column; align-items:flex-start;
+                > h2 { color:$black; font-family: 'karla'; font-size:32px; font-weight:800; margin-bottom:30px; }
+                > div:nth-child(2) {
+                    width:100%; margin-bottom:30px; display:flex; flex-direction:column; align-items:flex-start;
+                    > div:first-child {
+                        width:100%; display:flex; flex-direction:column; align-items:flex-start;
+                        > h4 {
+                            margin-bottom:10px;
+                            > span {
+                                color:$green; font-family: 'karla'; font-size:22px; font-weight:700;
+                            }
+                        }
+                        > p {
+                            color:$black; font-family: 'Lato'; font-size:16px; font-weight:400; line-height:24px;
+                            > span { font-weight:800; }
+                        }
+                    }
+                    > div:nth-child(2) {
+                        width:100%; display:flex; flex-direction:column; align-items:flex-start;
+                        > div {
+                            display:flex; flex-flow:row nowrap; align-items:flex-start;
+                            &:first-child { margin:30px 0 20px; }
+                            > img { width:44px; margin-right:20px; }
+                            > div {
+                                width:100%; display:flex; flex-direction:column; align-items:flex-start;
+                                > p:first-child {
+                                    font-family: 'karla'; font-size:22px; font-weight:700; margin-bottom:10px;
+                                }
+                                > p:not(:first-child) {
+                                    color:$black; font-family: 'Lato'; font-size:16px; font-weight:400; line-height:20px;
+                                }
+                            }
+                        }    
+                    }
+                    > a {
+                        border:2px solid $green; border-radius:5px; padding:10px 14px; color:$green; margin-top:30px; font-family: 'karla'; font-size:16px; font-weight:700; transition:color 0.5s;
+                        &:hover { background-color:$green; color:$white; transition:background-color 0.5s; } 
+                    }
+                }
+                
+           }
+           > div:last-child {
+                width:50%; max-width:520px; margin-left:10px;
+                > img { width:100%; }
+            }
+        }
+    }
+
+
+    // SECTION 6 - Avis client
+    section.home-section6 {
+        width:100%;
+        > div {
+            max-width:100%; padding:80px; display:flex; flex-direction:column; align-items:flex-start; background-color:#F2F7E9;
+            > h2 { color:$black; font-family: 'karla'; font-size:32px; font-weight:800; margin-bottom:30px; }
+            > div.slide-container {
+                max-width:100%; margin: 0 auto; overflow:hidden; position:relative; display:flex; flex-direction:column; align-items:center;
+                div.custom-slider {
+                        display:none; 
+                        > div {
+                            width:100%; display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between;
+                            > div {
+                                border:2px solid $green; border-radius:5px; padding:20px; display:flex; flex-direction:column; align-items:center;
+                                &:nth-child(2) {
+                                    margin:0 30px;
+                                }
+                                > p { color:$black; font-family: 'Lato'; font-size:16px; font-weight:400; line-height:20px; }
+                                > div:nth-child(2) {
+                                    display:flex; flex-flow:row nowrap; align-items:center; justify-content:center; margin:10px 0;
+                                    > div {
+                                        display:flex; flex-direction:column; align-items:flex-start; margin-left:10px;
+                                        > span:first-child {
+                                            color:$green; font-family: 'karla'; font-size:20px; font-weight:800;
+                                        }
+                                        > span:nth-child(2) {
+                                            color:$black; font-family: 'Lato'; font-size:12px; font-weight:400;
+                                        }
+                                    }
+                                }
+                                > div:last-child {
+                                    display:flex; flex-direction:column; align-items:center;
+                                    > img { margin-bottom:10px; }
+                                    > div { width:40px; height:2px; background-color: $green; }
+                                }
+                            }
+                        }
+                }
+                .on { display:block; }
+                .fade,.fade1,.fade2,.fade3  {
+                    animation-name: fade;
+                    animation-duration: 2s;
+                  }
+                  @keyframes fade {
+                    from {opacity: 0} 
+                    to {opacity: 1}
+                  }
+                  @keyframes fade1 {
+                    from {opacity: 0} 
+                    to {opacity: 2}
+                  }
+                  @keyframes fade2 {
+                    from {opacity: 0} 
+                    to {opacity: 1.5}
+                  }
+                  @keyframes fade3 {
+                    from {opacity: 0} 
+                    to {opacity: 2}
+                  }
+            }
+            div.slide-dot {
+                display:flex; justify-content: center; margin-top:30px;
+                span.dot {
+                    width: 10px; height: 10px; border:1px solid #79AB25; border-radius: 50%; margin: 0 5px; cursor: pointer;
+                    &.active, &:hover {
+                        background-color: #79AB25;
+                    }
+                }
+            } 
+        }
+    }
+
+    // SECTION 7 - ACTUALITES
+    section.home-section7 {
+        width:100%;
+        > div {
+            max-width:100%; padding:80px 80px 50px; display:flex; flex-direction:column; align-items:flex-start; background-color:rgba(0, 124, 183, 0.1);
+            > h2 { color:$black; font-family: 'karla'; font-size:32px; font-weight:800; margin-bottom:30px; }
+            > div {
+                width:100%; display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between; margin-bottom:30px;
+                &.bloc2 { display:none; }
+                > div {
+                    height:100%;
+                    &:first-child {
+                        margin-right:32px; width:50%;
+                        > div {
+                            > div:first-child {
+                                 height:420px;
+                                > a { background-color:$blue; }
+                                > img {
+                                    width:100%; height:100%; object-fit:cover; object-position:center;
+                                }
+                            }
+                            > span:nth-child(2) { color:$blue; font-family: 'karla'; font-size:20px; font-weight:700; line-height:24px; margin-top:15px; }
+                            > p { color:$black; font-family: 'Lato'; font-size:16px; font-weight:400; margin:10px 0 20px; }
+                            > span:nth-child(4) { color:$black; font-family: 'Lato'; font-size:12px; font-weight:400; margin-bottom:20px; }
+                            > a {
+                                border:2px solid $blue; border-radius:5px; padding:10px 14px; color:$blue; font-family: 'karla'; font-size:16px; font-weight:700; transition:color 0.5s;
+                                &:hover { background-color:$blue; color:$white; transition:background-color 0.5s; } 
+                            }
+                        }
+                    }
+                    &:not(:first-child) {
+                        width:48%;
+                        > div {
+                            width:100%;
+                            > div {
+                                &:first-child {
+                                    margin-bottom:30px;
+                                    > div:first-child > a { background-color:$green; }
+                                }
+                                &:last-child > div:first-child > a { background-color:$blue; }
+                                > div:first-child {
+                                    height:196px;
+                                    > div:first-child {
+                                        > a { background-color:$green; }
+                                    }
+                                }
+                                > a {
+                                    width:100%; display:flex; flex-direction:column; align-items:flex-start;
+                                    > span:first-child { color:$blue; font-family: 'karla'; font-size:20px; font-weight:700; line-height:24px; margin-top:15px; }
+                                    > span:nth-child(2) { color:$black; font-family: 'Lato'; font-size:12px; font-weight:400; margin-top:20px; }  
+                                }
+                            }
+                        }
+                    }
+                    div.article {
+                        background-color:$white; padding:15px; display:flex; flex-direction:column; align-items:flex-start;
+                        > div:first-child {
+                            width:100%; overflow:hidden; position:relative;
+                            > a {
+                                position:absolute; top:10px; right:10px; display:flex; align-items:center; justify-content:center; padding:5px; border-radius:5px; color:$white; font-family: 'karla'; font-size:14px; font-weight:700;
+                            }
+                            > img {
+                                width:100%; height:100%; object-fit:cover; object-position:center;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            > button {
+                cursor:pointer; border:2px solid $blue; background-color:$blue; border-radius:5px; padding:10px 14px; color:$white; font-family: 'karla'; font-size:16px; font-weight:700; transition:color 0.5s;
+                &:hover { background-color:transparent; color:$blue; transition:background-color 0.5s; } 
+            }
+        }
+    }
+
+    // SECTION 8 - FAQ
+    section.home-section8 {
+        width:100%;
+        > div {
+            max-width:100%; padding:80px; display:flex; flex-direction:column; align-items:flex-start;
+            > h2 { color:$black; font-family: 'karla'; font-size:32px; font-weight:800; margin-bottom:30px; }
+            > div {
+                max-width:100%; display:flex; flex-direction:column; align-items:flex-start;
+                > div {
+                    width:96%; display:flex; flex-direction:column; align-items:flex-start;  border:2px solid $blue; border-radius:5px; padding:10px 20px;
+                    &:not(:last-child) { margin-bottom:20px; }
+                    &.open {
+                        div.accordion-header > div {
+                            > img {
+                                &:first-child { display:none; }
+                                &:last-child { display:block; }
+                            }
+                        }
+                        div.accordion-content { display:flex; }
+                    }
+                    &.close {
+                        div.accordion-header > div {
+                            > img {
+                                &:first-child { display:block; }
+                                &:last-child { display:none; }
+                            }
+                        }
+                        div.accordion-content { display:none; }
+                    }
+                    > div {
+                        &:first-child {
+                            width:100%; display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between;
+                            &:hover { cursor: pointer;}
+                            > span { color:$black; font-family: 'karla'; font-size:22px; font-weight:700; }
+                            > div {
+                                width:15px; display:flex; align-items:center; justify-content:center;
+                                > img {
+                                    width:100%; }
+                                }
+                            }
+                        
+                        &:last-child {
+                            width:100%; flex-direction:column; margin-top:10px;
+                            > div {
+                                width:100%;
+                                p {
+                                    color:$black; font-family: 'Lato'; font-size:16px; line-height:24px; font-weight:400;
+                                    &:not(:last-child) { margin-bottom:20px; }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+} 
